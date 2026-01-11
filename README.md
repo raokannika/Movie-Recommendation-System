@@ -1,4 +1,4 @@
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 
 ## Project Overview
 This project is a **Content-Based Movie Recommendation System** that suggests movies similar to a user-selected movie.
@@ -21,7 +21,7 @@ The dataset contains information about movies, including:
 Only relevant columns required for generating recommendations are used.
 Text-based features are combined and processed to represent each movie uniquely.
 
-The dataset helps the system understand *what a movie is about* and recommend similar movies based on content similarity.
+The dataset helps the system understand what a movie is about and recommend similar movies based on content similarity.
 
 ---
 
@@ -57,48 +57,48 @@ The dataset helps the system understand *what a movie is about* and recommend si
 
 **TF-IDF** stands for **Term Frequency – Inverse Document Frequency**.
 
-### Why TF-IDF is used?
-Not all words in a movie description are equally important. Common words like *“the”, “is”, “and”* appear everywhere and do not help differentiate movies.
+### Why TF-IDF is used
+Not all words in a movie description are equally important. Common words like "the", "is", and "and" appear frequently and do not help differentiate movies.
 
-TF-IDF gives:
-- Higher weight to **important and unique words**
-- Lower weight to **common and less meaningful words**
+TF-IDF assigns:
+- Higher weight to important and unique words
+- Lower weight to common and less meaningful words
 
-### How it works:
+### How it works
 - **Term Frequency (TF):** Measures how often a word appears in a movie description.
 - **Inverse Document Frequency (IDF):** Reduces the importance of words that appear in many movies.
 
 After applying TF-IDF:
-- Each movie is converted into a **numerical vector**
+- Each movie is converted into a numerical vector
 - These vectors represent the movie’s content in mathematical form
 
 This makes it possible to compare movies using similarity measures.
 
 ---
 
-##  Cosine Similarity
+## Cosine Similarity
 
-**Cosine Similarity** measures the **angle between two vectors** instead of their distance.
+**Cosine Similarity** measures the angle between two vectors rather than their distance.
 
-### Why Cosine Similarity?
-- Text data creates **high-dimensional vectors**
-- Magnitude (length) is less important than **direction**
-- Cosine similarity focuses on how similar the content is
+### Why Cosine Similarity is used
+- Text data creates high-dimensional vectors
+- Magnitude is less important than direction
+- It focuses on how similar the content is
 
-### Cosine Similarity Values:
+### Cosine Similarity values
 - **1** → Movies are very similar  
 - **0** → Movies are not similar  
 - **-1** → Completely opposite (rare in text data)
 
-### In this project:
+### In this project
 - Each movie vector is compared with all other movie vectors
-- Movies with the **highest cosine similarity scores** are recommended
+- Movies with the highest cosine similarity scores are recommended
 
-Cosine similarity works very well for **text-based recommendation systems**.
+Cosine similarity works well for text-based recommendation systems.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python  
 - Pandas  
@@ -133,13 +133,13 @@ Cosine similarity works very well for **text-based recommendation systems**.
 
 ## Example
 
-**Input:**
+**Input**
 
 ```
 Avatar
 ```
 
-**Output:**
+**Output**
 
 ```
 Recommended Movies:
@@ -154,6 +154,6 @@ Recommended Movies:
 ## Conclusion
 
 This project demonstrates how machine learning techniques like **TF-IDF Vectorization** and **Cosine Similarity** can be used to build an effective movie recommendation system.
-It is beginner-friendly and helps understand real-world recommender systems.
+It is beginner-friendly and helps in understanding real-world recommender systems.
 
----
+```
